@@ -28,7 +28,7 @@ public class NinjaSlicer : MonoBehaviour {
 
 	void Awake()
 	{
-		playerColor = player.renderer.material;
+		playerColor = player.GetComponent<Renderer>().material;
 		mainCamera = GameObject.Find("Main Camera");
 	}
 	

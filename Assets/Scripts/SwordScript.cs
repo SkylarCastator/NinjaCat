@@ -33,7 +33,7 @@ public class SwordScript : MonoBehaviour {
 				//}
 			}
 
-			guiTexture.pixelInset = new Rect (Input.mousePosition.x -16, Input.mousePosition.y -16, 32, 32);    
+			GetComponent<GUITexture>().pixelInset = new Rect (Input.mousePosition.x -16, Input.mousePosition.y -16, 32, 32);    
 			XYprev = XY;
 		//}
 #else

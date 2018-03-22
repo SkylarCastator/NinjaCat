@@ -575,7 +575,7 @@ public class UIWidget : UIRect
 	{
 		get
 		{
-			BoxCollider box = collider as BoxCollider;
+			BoxCollider box = GetComponent<Collider>() as BoxCollider;
 			return (box != null);
 		}
 	}
@@ -750,7 +750,7 @@ public class UIWidget : UIRect
 	{
 		if (NGUITools.GetActive(this))
 		{
-			BoxCollider box = collider as BoxCollider;
+			BoxCollider box = GetComponent<Collider>() as BoxCollider;
 			if (box != null) NGUITools.UpdateWidgetCollider(box, true);
 		}
 	}

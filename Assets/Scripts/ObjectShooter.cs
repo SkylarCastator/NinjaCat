@@ -31,7 +31,7 @@ public class ObjectShooter : MonoBehaviour {
 	{
 		GameObject orangeClone;
 		orangeClone = Instantiate(spawnableObject, transform.position, spawnableObject.transform.rotation) as GameObject;
-		orangeClone.rigidbody.velocity = new Vector3(throwDiff.x,  throwDiff.y, throwDiff.z);
+		orangeClone.GetComponent<Rigidbody>().velocity = new Vector3(throwDiff.x,  throwDiff.y, throwDiff.z);
 		orangeClone.transform.parent = transform.parent;
 	}
 }

@@ -53,7 +53,7 @@ public class ShootableObjectScript : MonoBehaviour {
 			splat = Instantiate(splatter02, new Vector3(transform.position.x, transform.position.y, 60), Quaternion.Euler(270, 0, 0)) as GameObject;
 		}    
 
-		splat.rigidbody.velocity = new Vector3(throwDiff.x,  throwDiff.y, 0);
+		splat.GetComponent<Rigidbody>().velocity = new Vector3(throwDiff.x,  throwDiff.y, 0);
 
 	}
 
